@@ -2,7 +2,11 @@
 import TextEditor from './components/TextEditor.vue'
 import SidebarFTextOpt from './components/SidebarFTextOpt.vue'
 import {provide, ref } from 'vue';
+import { invoke } from '@tauri-apps/api';
 
+// invoke('greet', { name: 'World' }).then((message) => {
+//   console.log(message); // prints "Hello World!"
+// });
 
 const text = ref('上海中山北路76号，那座典雅的上海老房子，是中国共产党第一次全国代表大会的旧址。始建于 1920年秋，这座建筑见证了我党诞生的历史进程。1921年7月23日，这里召开了中共一大，通过了纲领性文件和重要决策；同时选举出了中央领导机构，宣告中国共产党正式成立。在1952年9月，这个中共首次全国代表大会的地址进行了翻修并增设了纪念馆，对公众开放。如今，该场地既是爱国主义教育基地，也是了解中共历史及战争时期人民奋斗史的地方。');
 
